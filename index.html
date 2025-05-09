@@ -102,7 +102,7 @@
 
     async function sendMessage(content) {
       appendMessage('user', content);
-      const res = await fetch('https://silver-readers-hide.loca.lt/chat', {
+      const res = await fetch('https://yama-jeff.loca.lt/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: content })
@@ -128,7 +128,7 @@
       if (!file) return;
       const formData = new FormData();
       formData.append('file', file);
-      const res = await fetch('https://silver-readers-hide.loca.lt/upload', {
+      const res = await fetch('https://yama-jeff.loca.lt/upload', {
         method: 'POST',
         body: formData
       });
